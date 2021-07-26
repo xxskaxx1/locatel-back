@@ -39,9 +39,6 @@ class PersonaController extends Controller
         $tbl_person->per_phone = $request->per_phone;
         $tbl_person->per_email = $request->per_email;
         $tbl_person->per_rol = $request->per_rol;
-        $tbl_person->per_student_number = $request->per_student_number;
-        $tbl_person->per_average_mark = $request->per_average_mark;
-        $tbl_person->per_salary = $request->per_salary;
         $tbl_person->save();
 
         $tbl_address = new Address;
